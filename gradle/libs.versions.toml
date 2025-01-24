@@ -1,0 +1,139 @@
+
+[versions]
+agp = "8.8.0"
+kotlin = "1.9.24"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+hilt = "2.51.1"
+hiltNavigationCompose = "1.2.0"
+kapt = "1.9.24"
+retrofit = "2.9.0"
+gson = "2.10.1"
+glide = "4.16.0"
+dataBinding = "8.8.0"
+viewModelKtx = "2.8.7"
+navigation = "2.8.5"
+recycler = "1.4.0"
+cardView = "1.0.0"
+compose = "1.7.6"
+koin = "3.4.0"
+coroutines = "1.7.4"
+dataStore = "1.1.2"
+workManager = "2.10.0"
+pagign = "3.3.5"
+cameraX = "1.4.1"
+coil = "2.4.0"
+securityCrypto = "1.1.0-alpha06"
+googlePlayMaps = "18.1.0"
+googlePlayLocation = "21.1.0"
+lottie = "6.1.0"
+zXing = "3.5.0"
+ktor = "2.3.5"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+#compose
+compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
+compose-graphics = { group = "androidx.compose.ui", name = "ui-graphics", version.ref = "compose" }
+compose-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "compose" }
+compose-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "compose" }
+compose-material = { group = "androidx.compose.material", name = "material", version.ref = "compose" }
+compose-runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "compose" }
+compose-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "compose" }
+compose-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "compose" }
+compose-icon = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "compose" }
+compose-icon-core = { group = "androidx.compose.material", name = "material-icons-core", version.ref = "compose" }
+compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "compose" }
+compose-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "compose" }
+compose-paging = { group = "androidx.paging", name = "paging-compose", version.ref = "pagign" }
+compose-coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+
+#koin
+koin = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+koin_compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
+
+#Coroutines
+coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+
+#lifecycle
+lifecycle-vm = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "viewModelKtx" }
+lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "viewModelKtx" }
+
+#hilt
+hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+
+#server
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+
+#image
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+
+#binding
+data-binding = { group = "androidx.databinding", name = "databinding-runtime", version.ref = "dataBinding" }
+view-binding = { group = "androidx.databinding", name = "viewbinding", version.ref = "dataBinding" }
+
+#navigation
+navigation = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+
+#ui
+recycler-view = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recycler" }
+card-view = { group = "androidx.cardview", name = "cardview", version.ref = "cardView" }
+
+#cameraX
+camerax = { group = "androidx.camera", name = "camera-camera2", version.ref = "cameraX" }
+camerax-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "cameraX" }
+camerax-video = { group = "androidx.camera", name = "camera-video", version.ref = "cameraX" }
+camerax-view = { group = "androidx.camera", name = "camera-view", version.ref = "cameraX" }
+camerax-extensions = { group = "androidx.camera", name = "camera-extensions", version.ref = "cameraX" }
+
+#Paging
+paging = { group = "androidx.paging", name = "paging-runtime", version.ref = "pagign" }
+paging-ktx = { group = "androidx.paging", name = "paging-runtime-ktx", version.ref = "pagign" }
+paging-rxjava3 = { group = "androidx.paging", name = "paging-rxjava3", version.ref = "pagign" }
+
+#WorkManager
+workManager = { group = "androidx.work", name = "work-runtime", version.ref = "workManager" }
+workManager-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "workManager" }
+
+#DataStore
+dataStore = { group = "androidx.datastore", name = "datastore", version.ref = "dataStore" }
+dataStore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "dataStore" }
+
+#Security
+security-crypto = { group = "androidx.security", name = "security-crypto", version.ref = "securityCrypto" }
+
+#GooglePlay
+google-play-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "googlePlayMaps" }
+google-play-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "googlePlayLocation" }
+
+#zXing
+zxing = { group = "com.google.zxing", name = "core", version.ref = "zXing" }
+
+#Ktor
+ktor = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktor" }
+ktor-serialization = { group = "io.ktor", name = "ktor-serialization", version.ref = "ktor" }
+
+#lottie
+lottie = { group = "com.airbnb.android", name = "lottie-compose", version.ref = "lottie" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kapt" }
+android-library = { id = "com.android.library", version.ref = "agp" }
