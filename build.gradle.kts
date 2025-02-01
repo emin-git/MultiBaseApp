@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.application") version Versions.GradlePlugin.ANDROID apply false
-    id("com.android.library") version Versions.GradlePlugin.ANDROID apply false
+    id("com.android.application") version Versions.GradlePlugin.ANDROID_GRADLE apply false
+    id("com.android.library") version Versions.GradlePlugin.ANDROID_GRADLE apply false
     kotlin("android") version "1.8.0" apply false
     kotlin("jvm") version Versions.GradlePlugin.KOTLIN apply false
     id("com.google.dagger.hilt.android") version Versions.GradlePlugin.HILT apply false
