@@ -99,26 +99,52 @@ fun DependencyHandler.jUnit(){
     testImplementation(Junit.JUNIT)
 }
 
-internal fun DependencyHandler.implementation(depName: String) {
-    add("implementation", depName)
+
+
+fun DependencyHandler.implementation(vararg dependencies: String) {
+    dependencies.forEach {
+        add("implementation", it)
+    }
 }
 
-internal fun DependencyHandler.implementation(depName: Any) {
-    add("implementation", depName)
+fun DependencyHandler.testImplementation(vararg dependencies: String) {
+    dependencies.forEach {
+        add("testImplementation", it)
+    }
 }
 
-internal fun DependencyHandler.kapt(depName: String){
-    add("kapt",depName)
+fun DependencyHandler.androidTestImplementation(vararg dependencies: String) {
+    dependencies.forEach {
+        add("androidTestImplementation", it)
+    }
 }
 
-internal fun DependencyHandler.kapt(depName:Any){
-    add("kapt",depName)
+fun DependencyHandler.kapt(vararg dependencies: String) {
+    dependencies.forEach {
+        add("kapt", it)
+    }
 }
 
-internal fun DependencyHandler.testImplementation(depName:String){
-    add("testImplementation",depName)
+fun DependencyHandler.implementation(vararg dependencies: Any) {
+    dependencies.forEach {
+        add("implementation", it)
+    }
 }
 
-internal fun DependencyHandler.testImplementation(depName:Any){
-    add("androidTestImplementation",depName)
+fun DependencyHandler.testImplementation(vararg dependencies: Any) {
+    dependencies.forEach {
+        add("testImplementation", it)
+    }
+}
+
+fun DependencyHandler.androidTestImplementation(vararg dependencies: Any) {
+    dependencies.forEach {
+        add("androidTestImplementation", it)
+    }
+}
+
+fun DependencyHandler.kapt(vararg dependencies: Any) {
+    dependencies.forEach {
+        add("kapt", it)
+    }
 }
