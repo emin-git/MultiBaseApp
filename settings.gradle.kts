@@ -14,5 +14,6 @@ dependencyResolutionManagement {
         maven("https://www.jitpack.io")
     }
 }
+
 rootProject.name = "MultiBaseApp"
 include(":app")
